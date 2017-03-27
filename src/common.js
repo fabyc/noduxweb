@@ -2936,7 +2936,7 @@
             });
             this.el.append(jQuery('<span/>', {
                 'class': 'label label-info',
-                'text': 'Processing...'
+                'text': 'Procesando...'
             }));
             this.el.hide();
             jQuery(function() {
