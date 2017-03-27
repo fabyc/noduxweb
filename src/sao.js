@@ -1,5 +1,3 @@
-/* This file is part of Tryton.  The COPYRIGHT file at the top level of
-   this repository contains the full copyright notices and license terms. */
 var Sao = {};
 
 (function() {
@@ -185,7 +183,7 @@ var Sao = {};
     Sao.config.limit = 1000;
     Sao.config.display_size = 20;
     Sao.config.roundup = {};
-    Sao.config.roundup.url = 'http://bugs.tryton.org/roundup/';
+    Sao.config.roundup.url = 'http://soporte.nodux.ec';
 
     Sao.i18n = i18n();
     Sao.i18n.setlang = function(lang) {
@@ -229,7 +227,7 @@ var Sao = {};
                     (preferences.actions || []).forEach(function(action_id) {
                         Sao.Action.execute(action_id, {}, null, {});
                     });
-                    var title = 'Tryton';
+                    var title = 'Nodux';
                     if (!jQuery.isEmptyObject(preferences.status_bar)) {
                         title += ' - ' + preferences.status_bar;
                     }
@@ -265,7 +263,7 @@ var Sao = {};
             jQuery('#user-preferences').children().remove();
             jQuery('#user-logout').children().remove();
             jQuery('#menu').children().remove();
-            document.title = 'Tryton';
+            document.title = 'Nodux';
             session.do_logout().always(Sao.login);
         });
     };
